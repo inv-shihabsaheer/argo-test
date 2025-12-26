@@ -1,0 +1,15 @@
+service-a:
+  replicaCount: 2
+  image:
+    repository: nginx
+    tag: latest
+  service:
+    port: 80
+
+service-b:
+  replicaCount: 1
+  image:
+    repository: httpd
+    tag: latest
+  service:
+    port: 80
