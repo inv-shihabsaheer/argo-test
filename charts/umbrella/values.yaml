@@ -1,15 +1,15 @@
 service-a:
-  replicaCount: 0
+  replicaCount: 1
   image:
-    repository: nginx
+    repository: milleniaprophet/appstore
     tag: latest
   service:
     port: 80
 
 service-b:
-  replicaCount: 0
+  replicaCount: 1
   image:
-    repository: httpd
+    repository: milleniaprophet/nginx-frontend
     tag: latest
   service:
     port: 80
