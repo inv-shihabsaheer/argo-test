@@ -1,7 +1,7 @@
 service-a:
   replicaCount: 1
   image:
-    repository: nginx
+    repository: milleniaprophet/appstore
     tag: latest
   service:
     type: NodePort 
@@ -10,7 +10,7 @@ service-a:
 service-b:
   replicaCount: 1
   image:
-    repository: httpd
+    repository: milleniaprophet/nginx-frontend
     tag: latest
   service:
     type: NodePort
