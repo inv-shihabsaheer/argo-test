@@ -4,6 +4,7 @@ service-a:
     repository: nginx
     tag: latest
   service:
+    type: NodePort 
     port: 80
 
 service-b:
@@ -12,4 +13,5 @@ service-b:
     repository: httpd
     tag: latest
   service:
+    type: ClusterIP
     port: 80
