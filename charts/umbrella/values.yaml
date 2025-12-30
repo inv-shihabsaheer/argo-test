@@ -13,5 +13,5 @@ service-b:
     repository: httpd
     tag: latest
   service:
-    type: ClusterIP
+    type: NodePort
     port: 80
